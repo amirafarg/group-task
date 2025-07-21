@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+ul {
+  margin-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5rem;
+  max-width: 1500px;
+}
+
+:root {
+  --black: #1D1D1D;
+  --perpel: #4D2C5E;
+  --praimary-black: #050C26;
+  --orenge: #FF7426;
+  --gray: #8A8A8A;
+  --dark-blue: #0F335E;
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-lg-4,
+.col-md-6,
+.col-sm-12 {
+  width: 33.3333333333%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-sm-12 {
+  width: 100%;
+}
+
+header {
+  padding: 3rem 0;
+  background: #FDF8EE;
+}
+
+header .container,
+header .nav-ul-bar,
+header .li-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+header .nav-ul-bar {
+  gap: 2rem;
+}
+header .responsive-icon {
+  display: none;
+}
+header .nav-ul-bar .li-hdr a {
+  color: var(--black);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+header .nav-ul-bar .li-hdr {
+  gap: 1.5rem;
+}
+header .nav-ul-bar .btn-signin {
+  color: #FFF;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 13.625rem;
+  background: #4D2C5E;
+  padding: 1rem 2rem;
+}
+
+.hero-sec {
+  padding: 5rem 0;
+  background: #FDF8EE;
+  background-image: url(../img/hero-bg.png.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 15rem;
+}
+
+.hero-sec .flex-btw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+}
+.hero-sec .flex-btw .photo {
+  width: 50%;
+}
+.hero-sec .flex-btw .photo img {
+  width: 100%;
+}
+.hero-sec .h2-smart,
+.hero-sec .de-color {
+  color: var(--praimary-black);
+  font-size: 3.3125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 135%;
+}
+.hero-sec .de-color {
+  color: var(--orenge);
+}
+.hero-sec .p-featurs {
+  color: var(--gray);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 171%;
+}
+.hero-sec .flex-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 6rem;
+  background: #FFF;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+.hero-sec .flex-search div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+.hero-sec .flex-search .btn-search {
+  color: var(--dark-blue);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.hero-sec .flex-search .a-cont {
+  border-radius: 6rem;
+  background: var(--perpel);
+  padding: 1rem 2rem;
+  color: #FFF;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sec-position {
+  border-radius: 0.875rem;
+  background: var(--perpel);
+  padding: 2rem 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateY(-100%);
+  transform: translatex(-50%);
+  z-index: 2;
+}
+
+.sec-position .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+}
+.sec-position .flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+.sec-position .flex-item img {
+  border-radius: 1.4375rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+}
+.sec-position .h6-item {
+  color: #FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.sec-position .p-item {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  header .li-hdr {
+    display: none;
+  }
+  header .responsive-icon {
+    display: block;
+  }
+  .flex-btw {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .flex-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
